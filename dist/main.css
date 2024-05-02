@@ -58,4 +58,229 @@ ul {
   color: hsl(228, 45%, 44%);
 }
 
+.card {
+  border-image: url(/images/icon-slider.svg) 60;
+  width: 540px;
+  height: auto;
+  background-color: white;
+  border-radius: 9px;
+  box-shadow: 0px 20px 30px hsl(230, 33%, 93%);
+}
+.card p {
+  color: hsl(225, 20%, 60%);
+}
+.card .topBox {
+  padding: 40px 47px 40px;
+  border-bottom: 1px solid hsl(223, 33%, 96%);
+}
+.card .topBox .viewsPriceBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 38px;
+}
+.card .topBox .viewsPriceBox p:first-child {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 14px;
+  font-weight: 700;
+  color: hsl(225, 20%, 60%);
+}
+.card .topBox .priceParagraph {
+  display: flex;
+  align-items: center;
+}
+.card .topBox .priceParagraph span:first-child,
+.card .topBox .priceParagraph :nth-child(2) {
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: hsl(227, 35%, 25%);
+}
+.card .topBox .priceParagraph span:last-child {
+  margin-left: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: hsl(225, 20%, 60%);
+}
+.card .topBox .mobilePrice {
+  display: none;
+}
+.card .topBox .slider {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 55px;
+}
+.card .topBox .slider input[type=range] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  height: 8px;
+  border-radius: 8px;
+  background-color: hsl(224, 65%, 95%);
+}
+.card .topBox .slider input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 40px;
+  width: 40px;
+  background: hsl(174, 86%, 45%) url(/images/icon-slider.svg) center no-repeat;
+  border-radius: 50%;
+  box-shadow: 0px 10px 25px hsl(174, 67%, 70%);
+  transition: 0.13s ease-in-out;
+}
+.card .topBox .slider input[type=range]::-webkit-slider-thumb:hover {
+  background: hsl(174, 67%, 70%) url(/images/icon-slider.svg) center no-repeat;
+}
+.card .topBox .slider input[type=range]::-webkit-slider-thumb:active {
+  background: hsl(174, 86%, 35%) url(/images/icon-slider.svg) center no-repeat;
+}
+.card .topBox .slider input[type=range]::-moz-range-thumb {
+  height: 40px;
+  width: 40px;
+  background: hsl(174, 86%, 45%) url(/images/icon-slider.svg) center no-repeat;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0px 15px 25px hsl(173, 89%, 70%);
+  transition: 0.13s ease-in-out;
+}
+.card .topBox .slider input[type=range]::-moz-range-thumb:hover {
+  background: hsl(174, 67%, 70%) url(/images/icon-slider.svg) center no-repeat;
+}
+.card .topBox .slider input[type=range]::-moz-range-thumb:active {
+  background: hsl(174, 86%, 35%) url(/images/icon-slider.svg) center no-repeat;
+}
+.card .topBox .boxForLeftShifting {
+  display: flex;
+  justify-content: end;
+  margin-right: 20px;
+}
+.card .topBox .boxForLeftShifting .billing {
+  display: flex;
+}
+.card .topBox .boxForLeftShifting .billing p {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+.card .topBox .boxForLeftShifting .billing .billingMobile {
+  display: none;
+}
+.card .topBox .boxForLeftShifting .billing span {
+  margin-left: 5px;
+  padding: 2px 5px;
+  border-radius: 15px;
+  font-size: 10px;
+  background-color: hsl(14, 92%, 95%);
+  color: hsl(15, 100%, 70%);
+}
+.card .topBox .boxForLeftShifting .billing .switchButton {
+  display: flex;
+  margin-left: 5px;
+  margin-right: 15px;
+}
+.card .topBox .boxForLeftShifting .billing .switchButton input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+.card .topBox .boxForLeftShifting .billing .switchButton label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 42px;
+  height: 22px;
+  background: hsl(223, 50%, 87%);
+  display: block;
+  border-radius: 40px;
+  position: relative;
+}
+.card .topBox .boxForLeftShifting .billing .switchButton label:hover {
+  background: hsl(174, 67%, 70%);
+}
+.card .topBox .boxForLeftShifting .billing .switchButton label:after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border-radius: 14px;
+  transition: 0.2s;
+}
+.card .topBox .boxForLeftShifting .billing .switchButton input:checked + label:after {
+  left: calc(100% - 3px);
+  transform: translateX(-100%);
+}
+.card .topBox .boxForLeftShifting .billing .switchButton label:active:after {
+  width: 20px;
+}
+.card .bottomBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 45px 22px 47px;
+}
+.card .bottomBox .checkTexts p {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.card .bottomBox .checkTexts p img {
+  margin-right: 15px;
+}
+.card .bottomBox button {
+  display: inline-block;
+  width: 170px;
+  height: 41px;
+  margin-bottom: 10px;
+  border-radius: 41px;
+  border: none;
+  outline: inherit;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  color: hsl(226, 100%, 87%);
+  background: hsl(227, 35%, 25%);
+  transition: color 0.13s ease-in;
+}
+.card .bottomBox button:hover {
+  color: white;
+}
+
+.background {
+  background-image: url(/images/bg-pattern.svg);
+  background-size: contain;
+  background-color: hsl(230, 100%, 99%);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.background .titleAndCardBox {
+  padding-top: 38px;
+  background: url(/images/pattern-circles.svg) no-repeat top;
+}
+.background .titleAndCardBox h1 {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 12px;
+  text-align: center;
+  color: hsl(227, 35%, 25%);
+}
+.background .titleAndCardBox .headerText {
+  margin-bottom: 90px;
+  font-weight: 600;
+  text-align: center;
+  color: hsl(225, 20%, 60%);
+}
+
 /*# sourceMappingURL=main.css.map */

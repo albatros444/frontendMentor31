@@ -1,2 +1,31 @@
 @import "globals";
 @import "attribution";
+@import "card";
+
+.background {
+  background-image: url(/images/bg-pattern.svg);
+  background-size: contain;
+  background-color: hsl(230, 100%, 99%);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  .titleAndCardBox {
+    padding-top: 38px;
+    background: url(/images/pattern-circles.svg) no-repeat top;
+    h1 {
+      font-size: 28px;
+      font-weight: 800;
+      margin-bottom: 12px;
+      text-align: center;
+      color: hsl(227, 35%, 25%);
+    }
+    .headerText {
+      margin-bottom: 90px;
+      font-weight: 600;
+      text-align: center;
+      color: hsl(225, 20%, 60%);
+    }
+  }
+}
