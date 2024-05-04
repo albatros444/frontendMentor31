@@ -4,15 +4,16 @@
 
 .background {
   background-image: url(/images/bg-pattern.svg);
-  background-size: contain;
+  background-size: 100% 55%;
   background-color: hsl(230, 100%, 99%);
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   height: 100vh;
   .titleAndCardBox {
     padding: 38px 0 70px;
+    margin-top: 65px;
     background: url(/images/pattern-circles.svg) no-repeat top;
     h1 {
       font-size: 28px;
