@@ -1,0 +1,97 @@
+@media screen and (max-width: 600px) {
+  .background {
+    height: auto;
+    align-items: start;
+    background-size: auto 50%;
+    background-color: white;
+
+    .titleAndCardBox {
+      margin-top: 56px;
+      padding-top: 33px;
+
+      h1 {
+        margin-bottom: 7px;
+
+        font-size: 20px;
+      }
+      .headerText {
+        width: 170px;
+        margin: 0 auto 63px;
+        font-size: 13px;
+        line-height: 1.8;
+      }
+    }
+  }
+  .card {
+    max-width: 327px;
+    margin: 0 auto 88px;
+    box-shadow: none;
+    box-shadow: 0px 10px 20px hsl(229, 35%, 94%);
+
+    .topBox {
+      padding: 35px 22px 37px;
+      .viewsPriceBox {
+        .desktopPrice {
+          display: none;
+        }
+        p:first-child {
+          margin: 0 auto;
+          font-size: 12px;
+        }
+      }
+      .slider {
+        margin-bottom: 37px;
+      }
+      .mobilePrice {
+        display: flex;
+        justify-content: space-between;
+        width: 172px;
+        margin: 0 auto 35px;
+        span:first-child,
+        :nth-child(2) {
+          font-size: 32px;
+        }
+        span:last-child {
+          margin-left: 10px;
+          font-size: 14px;
+          color: hsl(225, 20%, 60%);
+        }
+      }
+      .boxForRightShifting {
+        margin-right: -10px;
+        .billing {
+          p {
+            padding-top: 2px;
+            // letter-spacing: -0.001em;
+          }
+          .billingDesktop {
+            display: none;
+          }
+          .billingMobile {
+            display: block;
+          }
+          span {
+            padding: 2px 7px;
+            margin-left: 2px;
+          }
+          .switchButton {
+            margin-left: 0px;
+            margin-right: 12px;
+            letter-spacing: -0.02em;
+          }
+        }
+      }
+    }
+    .bottomBox {
+      flex-direction: column;
+      padding: 24px 45px 22px;
+      .checkTexts {
+        width: 150px;
+        margin-bottom: 22px;
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

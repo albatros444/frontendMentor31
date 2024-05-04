@@ -1,6 +1,7 @@
 const slider = document.querySelector("#range");
 const pageViews = document.querySelector(".pageViewsNumber");
-const price = document.querySelector(".price");
+const priceValueM = document.querySelector(".priceValueM");
+const priceValueD = document.querySelector(".priceValueD");
 const switchButton = document.querySelector("#switchButton");
 ///////////////
 const pageViewsArr = ["10K", "50K", "100K", "500K", "1M"];
@@ -11,13 +12,20 @@ function progressScript() {
     sliderValue * 25
   }%, hsl(224, 65%, 95%) ${sliderValue}%)`;
   pageViews.innerText = pageViewsArr[sliderValue];
-  price.innerText = switchButton.checked
+  priceValueM.innerText = switchButton.checked
+    ? Number(pricesArr[sliderValue]) * 0.75 + ".00"
+    : pricesArr[sliderValue];
+  priceValueD.innerText = switchButton.checked
     ? Number(pricesArr[sliderValue]) * 0.75 + ".00"
     : pricesArr[sliderValue];
 }
 progressScript();
 switchButton.addEventListener("click", () => {
-  price.innerText = switchButton.checked
+  priceValueM.innerText = switchButton.checked
+    ? Number(pricesArr[slider.value]) * 0.75 + ".00"
+    : pricesArr[slider.value];
+
+  priceValueD.innerText = switchButton.checked
     ? Number(pricesArr[slider.value]) * 0.75 + ".00"
     : pricesArr[slider.value];
 });
